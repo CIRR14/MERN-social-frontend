@@ -41,12 +41,25 @@
   justify-content: space-between;
 }
 
+.passwordDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.showPassword {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
 .loginInput {
   height: 50px;
   border-radius: 10px;
   border: 1px solid gray;
   font-size: 18px;
   padding-left: 20px;
+  min-width: 90%;
 }
 
 .loginInput:focus {
@@ -62,6 +75,14 @@
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
+}
+
+.loginButton:focus {
+  outline: none;
+}
+
+.loginButton:disabled {
+  cursor: not-allowed;
 }
 
 .loginForgot {
